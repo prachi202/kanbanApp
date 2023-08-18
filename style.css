@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.cmp-kanbanApp {
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  background-color: #0D479A;
+}
+.cmp-kanbanApp__container {
+  max-width: 1200px;
+  margin: auto;
+}
+.cmp-kanbanApp__container__heading {
+  margin-bottom: 30px;
+}
+.cmp-kanbanApp__container__heading--title {
+  font-size: 30px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+.cmp-kanbanApp__container__heading--subtitle {
+  font-size: 20px;
+  color: white;
+  font-weight: 300;
+  text-align: center;
+}
+.cmp-kanbanApp__container__kanban {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  min-height: 80vh;
+}
+.cmp-kanbanApp__container__kanban__taskbox {
+  background-color: #D9DFE9;
+  padding: 15px;
+  border-radius: 5px;
+  min-width: 325px;
+  max-width: 500px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.cmp-kanbanApp__container__kanban__taskbox__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.cmp-kanbanApp__container__kanban__taskbox__title span {
+  background-color: #E45826;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 7px;
+}
+.cmp-kanbanApp__container__kanban__taskbox__cards {
+  padding: 10px 5px;
+}
+.cmp-kanbanApp__container__kanban__taskbox__cards__card {
+  background-color: white;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.cmp-kanbanApp__container__kanban__taskbox__cards__card input {
+  background-color: white;
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.cmp-kanbanApp__container__kanban__taskbox__cards__card__division {
+  display: flex;
+  justify-content: space-between;
+}
+.cmp-kanbanApp__container__kanban__taskbox__cards__card__division span {
+  font-size: 12px;
+  padding: 5px 3px;
+  align-self: center;
+}
+.cmp-kanbanApp__container__kanban__taskbox__cards__card__division--taskid {
+  background-color: #002366;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+}
+.cmp-kanbanApp__container__kanban__taskbox__cards__card__division__icons button {
+  color: white;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 4px;
+  border: 0px;
+}
+.cmp-kanbanApp__container__kanban__taskbox__cards__card__division__icons--edit {
+  background-color: #646464;
+}
+.cmp-kanbanApp__container__kanban__taskbox__cards__card__division__icons--update {
+  background-color: #5050db;
+}
+.cmp-kanbanApp__container__kanban__taskbox__cards__card__division__icons--hide {
+  display: none;
+}
+.cmp-kanbanApp__container__kanban__taskbox__cards__card__division__icons--delete {
+  background-color: #e20000;
+}
+.cmp-kanbanApp__container__kanban__taskbox__add {
+  display: flex;
+}
+.cmp-kanbanApp__container__kanban__taskbox__add input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 16px;
+}
+.cmp-kanbanApp__container__kanban__taskbox__add--plus {
+  background-color: #50B286;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}

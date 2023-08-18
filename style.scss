@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.cmp-kanbanApp{
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    background-color: #0D479A;
+&__container{
+    max-width: 1200px;
+    margin: auto;
+    &__heading{
+        margin-bottom: 30px;
+        &--title{
+            font-size: 30px;
+            color: white;
+            font-weight: 500;
+            text-align: center;
+        }
+        &--subtitle{
+            font-size: 20px;
+            color: white;
+            font-weight: 300;
+            text-align: center;
+
+        }
+    }
+    &__kanban{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        min-height: 80vh;
+        &__taskbox{
+            background-color: #D9DFE9;
+            padding: 15px;
+            border-radius: 5px;
+            min-width: 325px;
+            max-width: 500px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            &__title{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 0px;
+                span{
+                    background-color: #E45826;
+                    color: white;
+                    padding: 10px;
+                    font-size: 16px;
+                    border-radius: 7px;
+                }
+            }
+            &__cards{
+                padding: 10px 5px;
+                &__card{
+                    background-color: white;
+                    margin: 10px 0px;
+                    padding: 10px;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        background-color: white;
+                        margin: 10px 0px;
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+                    &__division{
+                        display: flex;
+                        justify-content: space-between;
+                        span{
+                            font-size: 12px;
+                            padding: 5px 3px;
+                            align-self: center;
+                        }
+                        &--taskid{
+                            background-color: #002366;
+                            padding: 5px;
+                            color: white;
+                            border-radius: 5px;
+                        }
+                        &__icons{  
+                            button{
+                                color: white;
+                                font-size: 14px;
+                                padding: 8px;
+                                border-radius: 5px;
+                                cursor: pointer;
+                                margin-left: 4px;
+                                border: 0px;
+                            }
+                            &--edit{
+                                background-color: #646464;                                
+                            }                                                   
+                            &--update{
+                                background-color: #5050db;
+                            }
+                            &--hide{
+                                display: none;
+                                
+                            }                              
+                            &--delete{
+                                background-color: #e20000;
+                            }                                                       
+                        }
+                    }
+                }
+            }
+            &__add{
+                display: flex;
+                input{
+                    flex-grow: 1;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 0px;
+                    font-size: 16px;
+                }
+                &--plus{
+                    background-color: #50B286;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    padding: 10px;
+                    margin-left: 5px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+}

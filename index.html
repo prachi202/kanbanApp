@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9c91dafdb6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="cmp-kanbanApp">
+            <div class="cmp-kanbanApp__container">
+                <section class="cmp-kanbanApp__container__heading">
+                    <p class="cmp-kanbanApp__container__heading--title">Kanban Application</p>
+                    <p class="cmp-kanbanApp__container__heading--subtitle">Web Based Kanban style Application to handle project progress </p>
+                </section>
+                <section class="cmp-kanbanApp__container__kanban">
+                    <div class="cmp-kanbanApp__container__kanban__taskbox">
+                        <div class="cmp-kanbanApp__container__kanban__taskbox__title">
+                            <p class="cmp-kanbanApp__container__kanban__taskbox__title--heading">TODO</p>
+                            <span class="cmp-kanbanApp__container__kanban__taskbox__title--todo">2</span>
+                        </div>
+                        <div class="cmp-kanbanApp__container__kanban__taskbox__cards cmp-kanbanApp__container__kanban__taskbox__title--todo">
+                        </div>
+                        <form class="cmp-kanbanApp__container__kanban__taskbox__add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="cmp-kanbanApp__container__kanban__taskbox__add--plus"><i class="fa-solid fa-plus" data-id="0" name="submit"></i></button>
+                        </form>                        
+                    </div>    
+                    <div class="cmp-kanbanApp__container__kanban__taskbox">
+                        <div class="cmp-kanbanApp__container__kanban__taskbox__title">
+                            <p class="cmp-kanbanApp__container__kanban__taskbox__title--heading">IN PROGRESS</p>
+                            <span class="cmp-kanbanApp__container__kanban__taskbox__title--pending">3</span>
+                        </div>
+                        <div class="cmp-kanbanApp__container__kanban__taskbox__cards cmp-kanbanApp__container__kanban__taskbox__title--pending">
+                        </div>
+                        <form class="cmp-kanbanApp__container__kanban__taskbox__add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="cmp-kanbanApp__container__kanban__taskbox__add--plus"><i class="fa-solid fa-plus" data-id="1" name="submit"></i></button>
+                        </form>                        
+                    </div>
+                    <div class="cmp-kanbanApp__container__kanban__taskbox">
+                        <div class="cmp-kanbanApp__container__kanban__taskbox__title">
+                            <p class="cmp-kanbanApp__container__kanban__taskbox__title--heading">COMPLETED</p>
+                            <span class="cmp-kanbanApp__container__kanban__taskbox__title--completed">2</span>
+                        </div>
+                        <div class="cmp-kanbanApp__container__kanban__taskbox__cards cmp-kanbanApp__container__kanban__taskbox__title--completed">
+                        </div>
+                        <form class="cmp-kanbanApp__container__kanban__taskbox__add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="cmp-kanbanApp__container__kanban__taskbox__add--plus"><i class="fa-solid fa-plus" data-id="2" name="submit"></i></button>
+                            
+                        </form>                        
+                    </div>                  
+                </section>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script type="module" src="index.js"></script>
+</html>
